@@ -1,0 +1,40 @@
+.tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.tab_button {
+  padding: 0.5rem 1.2rem;
+  background-color: transparent;
+  border: 2px solid #00ffe0;
+  color: #00ffe0;
+  font-weight: 500;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab_button:hover {
+  background-color: #00ffe0;
+  color: #0f172a;
+}
+
+.active_tab {
+  background-color: #00ffe0;
+  color: #0f172a;
+}
+
+.skill_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+}

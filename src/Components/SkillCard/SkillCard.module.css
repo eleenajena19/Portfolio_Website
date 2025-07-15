@@ -1,0 +1,89 @@
+.card_tooltip {
+  position: relative;
+  width: 250px;
+  height: 280px;
+  border-radius: 1.5rem;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 12px 30px rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem;
+  color: white;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.skill_name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: cyan;
+  margin-top: 1rem;
+}
+
+.level_text {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  margin-top: 0.5rem;
+}
+
+/* Circular Ring */
+.icon_ring {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.progress_ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  transform: rotate(-90deg);
+}
+
+.progress_ring circle {
+  fill: none;
+  stroke-width: 10;
+  stroke: rgba(255, 255, 255, 0.1);
+}
+
+.progress_ring circle:nth-child(2) {
+  stroke: #00ffe0;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: cyan;
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #111827;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  color: #e0faff;
+  opacity: 0;
+  pointer-events: none;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0, 255, 255, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+.card_tooltip:hover .tooltip {
+  opacity: 1;
+}
