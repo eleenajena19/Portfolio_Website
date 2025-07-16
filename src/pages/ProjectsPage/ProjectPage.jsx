@@ -29,7 +29,7 @@ function Projects() {
               githubLink={"https://github.com/eleenajena19/Online-Crime-Management-System"}
               projectName={"Crime-File-Management System"}
               projectDetails={
-  "Crime File Management System is a secure and efficient web application, designed to streamline the filing, tracking, and management of criminal cases. "
+  "Crime File Management System is a secure and efficient web application, designed to streamline the filing. "
               }
               demoImage={Crime}
               skill_img={[
@@ -44,7 +44,7 @@ function Projects() {
               githubLink={"https://github.com/eleenajena19/MERN02M002/tree/main/june/week1/Day3"}
               projectName={"Beauty Salon Website"}
               projectDetails={
-"Beauty Salon Website: Stylish and elegant salon website built with HTML and CSS. Showcases services, pricing, and booking options. Clean design, user-friendly, and perfect for beauty businesses!"
+       "Beauty Salon Website: Stylish and elegant salon website UI built with HTML and CSS. "
               }
               demoImage={Beauty}
               skill_img={[
