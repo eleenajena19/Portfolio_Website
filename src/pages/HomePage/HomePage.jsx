@@ -109,8 +109,6 @@ useEffect(() => {
                 Download CV
               </a>
             </motion.button>
-
-           
           </motion.div>
         </motion.div>
 

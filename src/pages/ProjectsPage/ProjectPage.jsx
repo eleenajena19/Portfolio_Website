@@ -33,6 +33,7 @@ function Projects() {
               }
               demoImage={Crime}
               skill_img={[
+                
                 "https://cdn.worldvectorlogo.com/logos/html-1.svg",
                 "https://cdn.worldvectorlogo.com/logos/css-3.svg",
                 "https://cdn.worldvectorlogo.com/logos/javascript-1.svg",

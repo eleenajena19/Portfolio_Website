@@ -110,7 +110,12 @@
   .img_section {
     max-width: 85vw; /* Responsive on small screens */
   }
-
+@media screen and (max-width: 768px) {
+  .button_group {
+    justify-content: center;
+    margin-bottom: 6rem; /* ✅ Extra space above fixed bottom navbar */
+  }
+}
 
   .hero_image {
     object-fit: cover;
