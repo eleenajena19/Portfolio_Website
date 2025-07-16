@@ -46,14 +46,6 @@ useEffect(() => {
         exit={{ opacity: 0 }}
         className={style.hero_component}
       >
-         {/* 🔄 Rotating background shape */}
-  <div className={style.rotating_blob}></div>
-
-{/* ✨ Realistic parallax glowing circles */}
-<div ref={glowRef1} className={style.glow} style={{ top: "10%", right: "-15rem" }} />
-<div ref={glowRef2} className={style.glow_purple} style={{ bottom: "-5%", left: "-18rem" }} />
-<div ref={glowRef3} className={style.glow_soft} style={{ top: "-12rem", left: "35%" }} />
-
         <motion.div
           className={style.left_side}
           initial={{ opacity: 0, x: -50 }}
@@ -94,10 +86,7 @@ useEffect(() => {
             responsive design. I’m adept at translating complex requirements
             into functional, intuitive user interfaces. My growing expertise in
             UI/UX design enables me to craft visually appealing and user-centric
-            experiences that are both accessible and engaging. Always eager to
-            learn and implement the latest web technologies, I strive to build
-            impactful digital solutions that combine clean code with great
-            design.
+            experiences that are both accessible and engaging. 
           </p>
 
           <motion.div
@@ -121,15 +110,7 @@ useEffect(() => {
               </a>
             </motion.button>
 
-            <motion.button
-              whileHover={{ scale: 1.1, boxShadow: "0 0 15px rgba(255, 100, 255, 0.4)" }}
-              whileTap={{ scale: 0.95 }}
-              className={style.about_btn}
-            >
-              <a className="link_under_button" href="/about">
-                About Me
-              </a>
-            </motion.button>
+           
           </motion.div>
         </motion.div>
 
