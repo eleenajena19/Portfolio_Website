@@ -245,7 +245,7 @@
 
 .image_container {
   position: relative;
-  width: clamp(360px, 30vw, 340px); /* Responsive width */
+  width: clamp(340px, 30vw, 310px); /* Responsive width */
   aspect-ratio: 1 / 1;              /* Perfect circle */
   margin: auto;
 }
