@@ -118,15 +118,20 @@ useEffect(() => {
           transition={{ delay: 0.3, duration: 0.7 }}
           className={style.right_section}
         >
-          <motion.div
-            className={`${style.img_section} ${style.large_image}`}
-            whileHover={{ scale: 1.07 }}
-            transition={{ type: "spring", stiffness: 100 }}
-          >
-            <img src={My_pic} alt="Eleena" className={style.hero_image} />
-          </motion.div>
+   {/* <motion.div
+  className={`${style.img_section} ${style.large_image}`}
+  whileHover={{ scale: 1.07 }}
+  transition={{ type: "spring", stiffness: 100 }}
+> */}
+<div className={style.image_container}>
+  <div className={style.glow_ring}></div>
+  <img src={My_pic} alt="Eleena" className={style.profile_image} />
+</div>
+
+</motion.div>
+
         </motion.div>
-      </motion.div>
+      {/* </motion.div> */}
     </div>
   );
 }
