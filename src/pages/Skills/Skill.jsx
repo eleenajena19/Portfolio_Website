@@ -43,48 +43,52 @@ function Skill() {
       <MainContainer>
         <ComponentTitle title="My Skills" />
 
-        {/* FILTER CONTROLS */}
-        <div className={styles.controls}>
-          <div className={styles.tabs}>
-            {categories.map((category) => (
-              <motion.button
-                key={category}
-                className={`${styles.tab_button} ${
-                  activeCategory === category ? styles.active_tab : ""
-                }`}
-                onClick={() => setActiveCategory(category)}
-                whileHover={{ scale: 1.1, backgroundColor: "#00ffaa", color: "#000" }}
-                whileTap={{ scale: 0.95 }}
-                title={`Show ${category} skills`}
-              >
-                {category}
-              </motion.button>
-            ))}
-          </div>
-        </div>
+        {/* WRAPPER for Alignment */}
+        <div className={styles.skills_wrapper}>
 
-        {/* SKILLS GRID */}
-        <motion.div
-          className={styles.skill_container}
-          layout
-          transition={{ layout: { duration: 0.5 } }}
-        >
-          <AnimatePresence>
-            {filteredSkills.map((skill) => (
-              <motion.div
-                key={skill.name}
-                layout
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.4 }}
-                title={`${skill.name} - Level ${skill.level}`}
-              >
-                <SkillCard skill_name={skill.name} level={skill.level} />
-              </motion.div>
-            ))}
-          </AnimatePresence>
-        </motion.div>
+          {/* FILTER CONTROLS */}
+          <div className={styles.controls}>
+            <div className={styles.tabs}>
+              {categories.map((category) => (
+                <motion.button
+                  key={category}
+                  className={`${styles.tab_button} ${
+                    activeCategory === category ? styles.active_tab : ""
+                  }`}
+                  onClick={() => setActiveCategory(category)}
+                  whileHover={{ scale: 1.1, backgroundColor: "#00ffaa", color: "#000" }}
+                  whileTap={{ scale: 0.95 }}
+                  title={`Show ${category} skills`}
+                >
+                  {category}
+                </motion.button>
+              ))}
+            </div>
+          </div>
+
+          {/* SKILLS GRID */}
+          <motion.div
+            className={styles.skill_container}
+            layout
+            transition={{ layout: { duration: 0.5 } }}
+          >
+            <AnimatePresence>
+              {filteredSkills.map((skill) => (
+                <motion.div
+                  key={skill.name}
+                  layout
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{ duration: 0.4 }}
+                  title={`${skill.name} - Level ${skill.level}`}
+                >
+                  <SkillCard skill_name={skill.name} level={skill.level} />
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </motion.div>
+        </div>
       </MainContainer>
     </div>
   );
