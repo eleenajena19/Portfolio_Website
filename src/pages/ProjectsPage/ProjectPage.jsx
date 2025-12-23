@@ -26,10 +26,10 @@ function Projects() {
           >
             <ProjectCard
               // previewLink={"https://youtu.be/GLJCR6IoIjQ?si=TDubWvPu9k_6OHkN"}
-              githubLink={"https://github.com/eleenajena19/Online-Crime-Management-System"}
-              projectName={"Crime-File-Management System"}
+              githubLink={"https://github.com/biswaranjanbehera006/Qlith-Flight-Booking"}
+              projectName={"flight Booking System"}
               projectDetails={
-  "Crime File Management System is a secure and efficient web application, designed to streamline the filing. "
+  "Flight Booking System is a secure web application for booking and managing flight tickets. "
               }
               demoImage={Crime}
               skill_img={[
