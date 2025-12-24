@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import ComponentTitle from "../../Components/ComponentTitle/ComponentTitle";
 import Circle from "../../Components/Circle/Circle";
 import MainContainer from "../../Components/MainContainer/MainContainer";
-import Crime from "../../assets/Crime.png"
+import Crime from "../../assets/Flight.png"
 
 function Projects() {
   return (
