@@ -76,7 +76,7 @@ I'd love to hear from you! Feel free to reach out via the form or contact info b
                     <i className="fa-brands fa-github"></i>
                   </a>
                 </div>
-                <div className={styles.account_icon}>
+                {/* <div className={styles.account_icon}>
                   <a
                     href="https://www.instagram.com/eleenajena_?igsh=Zm10YXFzemV1cGp5"
                     target="_blank"
@@ -84,7 +84,7 @@ I'd love to hear from you! Feel free to reach out via the form or contact info b
                   >
                     <i className="fa-brands fa-instagram"></i>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
