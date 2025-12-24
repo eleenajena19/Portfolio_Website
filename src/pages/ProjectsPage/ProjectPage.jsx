@@ -25,7 +25,7 @@ function Projects() {
             className={styles.projects_component}
           >
             <ProjectCard
-              // previewLink={"https://youtu.be/GLJCR6IoIjQ?si=TDubWvPu9k_6OHkN"}
+              previewLink={"https://flyonix.vercel.app"}
               githubLink={"https://github.com/biswaranjanbehera006/Qlith-Flight-Booking"}
               projectName={"flight Booking System"}
               projectDetails={
