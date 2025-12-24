@@ -96,14 +96,14 @@ function Navbar() {
           >
             <i className="fa-brands fa-x-twitter"></i>
           </a> */}
-          <a
+          {/* <a
             href="https://www.instagram.com/eleenajena_?igsh=Zm10YXFzemV1cGp5"
             target="_blank"
             rel="noopener noreferrer"
             className={style.link}
           >
             <i className="fa-brands fa-instagram"></i>
-          </a>
+          </a> */}
         </div>
       </div>
     </>
